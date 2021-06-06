@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
 
     private void Start()
     {
+        target = GameSceneController.instance.Player.transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
